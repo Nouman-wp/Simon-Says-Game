@@ -1,11 +1,8 @@
 let gameSeq = [];
 let userSeq = [];
-
 let btns = ["red", "blue", "green", "yellow"];
-
 let started = false;
 let level = 0;
-
 let h2 = document.querySelector("h2");
 
 document.addEventListener("keypress", function () {
@@ -72,7 +69,6 @@ function btnPress() {
   
   checkAns(userSeq.length - 1);
 }
-
 document.querySelectorAll(".btn").forEach(btn => {
   btn.addEventListener("click", btnPress);
 });
